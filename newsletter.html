@@ -2,6 +2,166 @@
 <html>
   <head>
     <title>The WAI Print</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://raw.githubusercontent.com/WarwickAI/email-template/main/images/logo.svg" rel="preload" as="image">
+    <style>
+      .large-divider {
+        padding: 4px 0px 4px 0px;
+      }
+      .large-divider hr {
+        width: 100%;
+        border: none;
+        border-top: 4px solid #6d60c1;
+        margin: 0;
+      }
+
+      .small-divider {
+        padding: 16px 80px 16px 80px;
+      }
+      .small-divider hr {
+        width: 100%;
+        border: none;
+        border-top: 2px solid #6d60c1;
+        margin: 0;
+      }
+
+      .round-button {
+        text-align: center;
+        padding: 16px 24px 16px 24px;
+      }
+      .round-button a {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #6d60c1;
+        border-radius: 64px;
+        display: inline-block;
+        padding: 12px 20px;
+        text-decoration: none;
+      }
+
+      .left-column {
+        box-sizing: content-box;
+        vertical-align: middle;
+        padding-left: 0;
+        padding-right: 8px;
+      }
+      .right-column {
+        box-sizing: content-box;
+        vertical-align: middle;
+        padding-left: 8px;
+        padding-right: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #e0e0e0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1 {
+        font-weight: bold;
+        text-align: right;
+        margin: 0;
+        font-size: 32px;
+        padding: 16px 0px 16px 16px;
+      }
+
+      h2,
+      h3 {
+        font-weight: bold;
+        margin: 0;
+        padding: 16px 24px 0px 24px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+
+      .location-text {
+        font-weight: normal;
+        font-style: italic;
+        padding: 0px 24px 0px 24px;
+      }
+
+      .normal-text {
+        font-weight: normal;
+        padding: 16px 24px 16px 24px;
+      }
+
+      .root {
+        color: #3c3c3c;
+        padding-top: 64px;
+        font-family: "Courier Prime", "Nimbus Mono PS", "Courier New", "Cutive Mono", monospace;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.15008px;
+        line-height: 1.5;
+        margin: 0;
+        min-height: 100%;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 0px;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 600px) {
+        .root {
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .root {
+          font-size: 12px;
+        }
+        h1 {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 12px;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1a1a1a;
+        }
+        .root {
+          color: #e0e0e0;
+        }
+        h1,
+        h2,
+        h3 {
+          color: #ffffff;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="root">
@@ -19,14 +179,7 @@
             <td>
               <div class="flex" style="padding-left: 16px; padding-right: 16px">
                 <div class="logo" style="width: 100px; margin: auto 0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 2091 658"
-                  >
-                    <path
-                      d="M0 1h147l203 472L530 1h123l122 319-72 170-106-284h-10L418 658H282Zm1061 0h155L916 658H773l-6-13Zm282 0h157l299 657h-155l-221-487-161 351 165-1 59 137h-441Zm294 0h153l51 109h-155Zm96 213h155l202 444h-155Z"
-                    />
-                  </svg>
+                  <img src="https://raw.githubusercontent.com/WarwickAI/email-template/main/images/logo.svg" alt="logo"/>
                 </div>
                 <div>
                   <h1 style="padding-bottom: 0px">The WAI Print</h1>
@@ -218,164 +371,5 @@
         </tbody>
       </table>
     </div>
-    <style>
-      .large-divider {
-        padding: 4px 0px 4px 0px;
-      }
-      .large-divider hr {
-        width: 100%;
-        border: none;
-        border-top: 4px solid #6d60c1;
-        margin: 0;
-      }
-
-      .small-divider {
-        padding: 16px 80px 16px 80px;
-      }
-      .small-divider hr {
-        width: 100%;
-        border: none;
-        border-top: 2px solid #6d60c1;
-        margin: 0;
-      }
-
-      .round-button {
-        text-align: center;
-        padding: 16px 24px 16px 24px;
-      }
-      .round-button a {
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: bold;
-        background-color: #6d60c1;
-        border-radius: 64px;
-        display: inline-block;
-        padding: 12px 20px;
-        text-decoration: none;
-      }
-
-      .left-column {
-        box-sizing: content-box;
-        vertical-align: middle;
-        padding-left: 0;
-        padding-right: 8px;
-      }
-      .right-column {
-        box-sizing: content-box;
-        vertical-align: middle;
-        padding-left: 8px;
-        padding-right: 0;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #e0e0e0;
-      }
-
-      h1 {
-        font-weight: bold;
-        text-align: right;
-        margin: 0;
-        font-size: 32px;
-        padding: 16px 0px 16px 16px;
-      }
-
-      h2,
-      h3 {
-        font-weight: bold;
-        margin: 0;
-        padding: 16px 24px 0px 24px;
-      }
-      h2 {
-        font-size: 24px;
-      }
-      h3 {
-        font-size: 20px;
-      }
-
-      .location-text {
-        font-weight: normal;
-        padding: 0px 24px 0px 24px;
-      }
-
-      .normal-text {
-        font-weight: normal;
-        padding: 16px 24px 16px 24px;
-      }
-
-      .root {
-        color: #3c3c3c;
-        padding-top: 64px;
-        font-family: "Nimbus Mono PS", "Courier New", "Cutive Mono", monospace;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.15008px;
-        line-height: 1.5;
-        margin: 0;
-        min-height: 100%;
-        width: 100%;
-      }
-
-      .logo {
-        padding: 0px;
-      }
-      .logo svg path {
-        fill: #3c3c3c;
-        fill-rule: evenodd;
-      }
-
-      .flex {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      @media (max-width: 600px) {
-        .root {
-          font-size: 14px;
-        }
-        h1 {
-          font-size: 24px;
-        }
-        h2 {
-          font-size: 20px;
-        }
-        h3 {
-          font-size: 16px;
-        }
-      }
-
-      @media (max-width: 400px) {
-        .root {
-          font-size: 12px;
-        }
-        h1 {
-          font-size: 20px;
-        }
-        h2 {
-          font-size: 16px;
-        }
-        h3 {
-          font-size: 12px;
-        }
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: #1a1a1a;
-        }
-        .root {
-          color: #e0e0e0;
-        }
-        h1,
-        h2,
-        h3 {
-          color: #ffffff;
-        }
-
-        .logo svg path {
-          fill: #e0e0e0;
-        }
-      }
-    </style>
   </body>
 </html>
